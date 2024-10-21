@@ -1,0 +1,188 @@
+/* src/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* Global variables */
+:root {
+  --accent-color:#E54065;
+  --background-color:#F4F5F9;
+  --border-color:#CFD2DC;
+  --text-color:#636363;
+  --filter-button:#E1E4EA;
+  --read-background:#F2F2F2;
+  --section-background:#fff;
+   
+}
+
+body{
+  margin: 0px;
+  font-family: Nunito;
+}
+
+p, time{
+ color: #636363;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  background: var(--background-color);
+  padding: 0px 64px;
+}
+
+.app-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+  }
+  
+  .list {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-part{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+.email-mapping{
+  width: 100%;
+}
+
+.filter-component{
+  display: flex;
+  gap: 20px;
+}
+
+  .email-list{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    background-color: var(--background-color);
+
+  }
+
+  .avatar{
+    color: white;
+    background: var(--accent-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; /* Aligns items horizontally */
+    align-items: center;  
+    min-width: 3rem;
+    min-height: 3rem;  
+  }
+
+  .initialDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mail-details{
+    display: flex;
+    gap: 10px;
+    
+  }
+  .mail-explanation{
+    display: flex;
+    gap: 20px;
+  }
+
+  
+.email{
+  background: var(--section-background);
+  border-radius: 26px;
+  transition: all 0.5s ease; 
+}
+
+.email:hover{
+
+  transform: scale(1.03);
+
+}
+
+  .email-body {
+    width: 175%;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: var(--section-background);
+    border: 1px solid var(--border-color) ;
+    border-radius: 26px;
+  }
+  
+ 
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+  }
+  
+  li p {
+    margin: 0;
+  }
+  
+  li button {
+    margin-left: 10px;
+  }
+  
+  .pagination {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .pagination button {
+    margin-right: 5px;
+  }
+  
+  .pagination button.active {
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .bottom-section{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 12px;
+  }
+
+  .head-part{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  button.active {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+  }
+  
+  button:hover {
+    background-color: #f0f0f0;
+  }
+  
